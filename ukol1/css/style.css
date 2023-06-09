@@ -1,0 +1,304 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+  
+}
+
+.row{
+    max-width: 1240px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+:root{
+    /* Font */
+    --Color-black: #000;
+    --Color-white: #fff;
+
+
+    /* Link */
+    --Color-light-pink: #efa69d;
+    --Color-pink: #e9877b;
+
+
+    /* Background */
+    --Color-dark-brown: #33292a;
+    --Color-brown: #644b4f;
+    --Color-dark-gray: #333333;
+    --Color-white2: #f2f2f2;
+
+}
+
+
+/* Header + Navbar  */
+
+header{
+    background-image: url(../images/scott-goodwill-y8Ngwq34_Ak-unsplash.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header nav{
+    height: 80px;
+    background-color: var(--Color-dark-brown);
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+ header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .7s;
+ }
+
+ header nav ul li {
+    padding: 30px;
+ }
+
+ header nav ul li a {
+    color: var(--Color-white);
+    font-size: 20px;
+    letter-spacing: 1px;
+ }
+
+ .hamburger{
+    cursor: pointer;
+    padding-top: 25px;
+    display: none;
+ }
+
+ .box{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: var(--Color-white);
+ }
+
+ header h1{
+    text-align: right;
+    padding-right: 20px;
+    font-size: 80px;
+    color:var(--Color-white);
+    position: absolute;
+    bottom: 80px;
+    text-shadow: 0 0 5px var(--Color-black);
+ }
+
+ /* Hamburger toogle cross */
+.nav-menu.active{
+    left: 0;
+    transition: all .7s;
+}
+
+.hamburger.active .box:nth-child(2){
+    opacity: 0;
+}
+
+.hamburger.active .box:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active .box:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* <!-- About us --> */
+.container-about-us{
+    display: flex;
+    margin:  80px auto;
+    box-shadow: 0 0 10px var(--Color-black);
+}
+
+.container-about-us .description{
+    padding: 30px;
+}
+.container-about-us .description h2{
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.container-about-us .description p{
+    font-size: 20px;
+    text-align: justify;
+}
+
+.container-about-us img{
+    width: 49%;
+}
+
+
+/* <!-- What We Do --> */
+.what-we-do{
+    background-color: #33292a;
+}
+
+.what-we-do h2{
+    color: var(--Color-white);
+    padding-top: 80px;
+    padding-bottom: 30px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.what-we-do p{
+    font-size: 20px;
+    color: var(--Color-white);
+    padding: 10px;
+}
+
+.container-icon{
+    display: flex;
+    padding: 80px ;
+    justify-content: space-around;
+}
+
+.one-icon{
+    text-align: center;
+}
+
+.container-icon img {
+    width: 100px;
+}
+
+/* <!-- Our Trips --> */
+.our-trips{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.our-trips p{
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.our-trips img{
+    width: 33%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/*   <!-- Want to go --> */
+.want-to-go{
+    background-color: var(--Color-brown);
+    color: var(--Color-white);
+}
+
+.container-want-to-go{
+    display: flex;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.container-want-to-go h2{
+    width: 35%;
+    font-size: 40px;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+
+}
+
+.container-want-to-go .description{
+    width: 66%;
+    font-size: 20px;
+}
+
+.container-want-to-go .description p:nth-child(2){
+   margin-top: 40px;
+}
+
+.container-want-to-go .description button{
+    padding: 5px 15px;
+    margin-top: 40px;
+}
+
+/*  <!-- Reviews --> */
+.reviews h2{
+    text-align: center;
+    margin-top: 80px;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.reviews p{
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container-reviews{
+    display: flex;
+    justify-content: center;
+}
+
+.one-reviews{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px var(--Color-black);
+    max-width: 400px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.one-reviews img{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 30px;
+}
+
+.one-reviews p:nth-child(3){
+    font-weight: 900;
+}
+
+
+/*     <!-- Gallery --> */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 80px;
+}
+
+.gallery img{
+    width: 50%;
+}
+
+/* Footer */
+footer{
+    background-color: var(--Color-dark-gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer p {
+    color: var(--Color-white);
+    padding: 20px;
+}
+
+.contact{
+    padding-top: 20px;
+    color: var(--Color-pink);
+    font-weight: 900;
+    font-size: 20px;
+    border-bottom: 2px solid var(--Color-pink);
+}

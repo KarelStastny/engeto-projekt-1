@@ -1,0 +1,96 @@
+@media only screen and (max-width: 768px){
+    /* Navbar */
+    header nav{
+        justify-content: right;
+    }
+
+    .hamburger{
+        display: initial;
+        padding-right: 20px;
+    }
+
+    header nav ul {
+        position: absolute;
+        top: 80px;
+        background-color: var(--Color-dark-brown);
+        width: 100%;
+        left: -100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+     }
+
+     header nav ul li {
+        padding: 10px;
+     }
+
+     /* <!-- About us --> */
+     .container-about-us{
+        flex-direction: column;
+     }
+     .container-about-us img{
+        width: 100%;
+        padding: 30px;
+    }
+
+    /* <!-- What We Do --> */
+    .container-icon{
+        flex-direction: column;
+    }
+    .container-icon img {
+        margin: 0 auto;
+    }
+    .one-icon{
+        padding: 20px;
+    }
+
+    /* <!-- Our Trips --> */
+    .our-trips{
+        flex-direction: column;
+    }
+    .our-trips p{
+        width: 100%;
+    }
+    
+    .our-trips img{
+        width: 100%;
+    }
+
+
+    /*   <!-- Want to go --> */
+    .container-want-to-go{
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .container-want-to-go h2{
+        width: 100%;
+        padding: 0;
+        margin-bottom: 30px;
+    }
+    
+    .container-want-to-go .description{
+        width: 100%;
+        font-size: 20px;
+    }
+
+    /*  <!-- Reviews --> */
+    .container-reviews{
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    /*     <!-- Gallery --> */
+.gallery img{
+    width: 100%;
+}
+    
+
+
+
+/* Konec Query */
+}
